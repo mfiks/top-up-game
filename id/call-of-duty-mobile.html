@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="https://i.ibb.co/J7Nm7H4/logo.png">
+    
+   <!-- Import jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity=
+"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+      
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity=
+"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous">
+    </script>     
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+    
+    <title>Call of Duty Mobile</title>
+  </head>
+
+  <!--CSS-->
+  <style>
+    .list-group-item {
+            user-select: none;
+        }
+        .list-group input[type="radio"] {
+            display: none;
+        }
+
+        .list-group input[type="radio"]+.list-group-item {
+            cursor: pointer;
+            background-color: #FFF;
+            color: #000;
+            border-color: #2575BF;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+        .list-group input[type="radio"]+.list-group-item:hover {
+            cursor: pointer;
+            background-color: #D3D3D3;
+            color: #2196f3;
+            border-color: #D3D3D3;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+        .list-group input[type="radio"]:checked+.list-group-item {
+            background-color: #2196f3;
+            color: #fff;
+            font-size: 15px;
+        }
+    
+  </style>
+
+  <body class="bg-light">
+
+<!-- NAVBAR -->  
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3 mb-3 fixed-top ">
+  <a class="navbar-brand" href="../index.html">
+  	<img src="https://i.ibb.co/rsjSJBf/logo-name.png" width="180" height="30" class="d-inline-block align-top" alt="">
+  </a>
+</nav>  
+
+<br>
+<br>
+<br>
+
+
+
+<!-- BANNER -->
+
+<div class="container">
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  </ol>
+ <div class="carousel-inner rounded">
+ <div class="carousel-item active">
+  <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwawNp1YqA6pXotTB8K9KChvsNLfFtUqZCdQ&usqp=CAU" alt="First slide">
+  </div>
+  </div>
+ </div>
+</div>
+<br>
+
+<!-- TITLE GAME -->
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h4>Call Of Duty Mobile</h4>
+      <h6>
+      <hr>
+      Proses 10 - 60 menit sesuai Antrian.
+      <hr>
+      </h6>
+      <center class="text-primary" ><b>Layanan Aktif 09:00 - 19:00 WIB</b></center>
+      <hr class="w-25">
+    <ol type="1">
+     <li>Masukkan <b>OPEN ID <i>(Akun wajib bind FB)</i></b></li>
+     <li>Pilih Nominal</li>
+     <li>Pilih Metode Pembayaran</li>
+     <li>Klik <b> Beli Sekarang </b> & Lakukan <b>Pembayaran</b></li>
+     <li>Tunggu 10 - 60 Menit Akan Masuk Otomatis Di Akun Anda.</li>
+    </ol> 
+    <hr>
+    <center class="text-primary"><b>Fiks Game Store Adalah Tempat Terbaik Untuk Membeli Voucher Game !</b></center>
+    <hr>
+    </div>
+  </div>
+</div>
+
+<!-- INPUT ID -->
+<form>
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Lengkapi Data</h5>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Masukkan OPEN ID" name="id" id="id" required>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nickname" name="nickname" id="nickname" required>
+          </div>
+        </div>
+      <br>
+      <button type="button" class="btn btn-primary btn-footer text-light" data-toggle="modal" data-target=".bd-example-modal-lg">Petunjuk
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal Petunjuk-->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <img src="https://cdn1.codashop.com/S/content/common/images/helpers/90.png" alt="">
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Pili Nominal -->
+
+<div class="container">
+  <div class="card">
+    <div class="card-body border-primary">
+      <h5 class="card-title">Pilih Nominal</h5>
+
+  <div class="row">
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="53 CP" id="Rp 10.000">
+        <label for="Rp 10.000" class="list-group-item">53 CP</label>
+      </div>
+      </center>
+    </div>
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="112 CP" id="Rp 16.000">
+        <label for="Rp 16.000" class="list-group-item">112 CP</label>
+      </div>
+      </center>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="278 CP" id="Rp 40.000">
+        <label for="Rp 40.000" class="list-group-item">278 CP</label>
+      </div>
+      </center>
+    </div>
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="581 CP" id="Rp 80.000">
+        <label for="Rp 80.000" class="list-group-item">581 CP</label>
+      </div>
+      </center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="1268 CP" id="Rp 155.000">
+        <label for="Rp 155.000" class="list-group-item">1268 CP</label>
+      </div>
+      </center>
+    </div>
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="1901 CP" id="Rp 230.000">
+        <label for="Rp 230.000" class="list-group-item">1901 CP</label>
+      </div>
+      </center>
+    </div>
+    <div class="w-100"></div>
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="3300 CP" id="Rp 385.000">
+        <label for="Rp 385.000" class="list-group-item">3300 CP</label>
+      </div>
+      </center>
+    </div>
+    <div class="col-sm"><br>
+      <center>
+      <div class="list-group">
+        <input type="radio" name="service" value="7128 CP" id="Rp 770.000">
+        <label for="Rp 770.000" class="list-group-item">7128 CP</label>
+      </div>
+      </center>
+    </div>
+  </div>
+  </div>
+ </div>
+</div>
+</div>
+
+<br>
+
+<!-- INI TAMPILAN HARGA-->
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Nominal Harga</h5>
+        <div class="row">
+          <div class="col">
+           <div class="form-control w-50-sm" id="harga">
+           </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- JavaScript Harga-->
+<script type="text/javascript">
+    $("input[name=service]").click(function () {
+        var service  = $("input[name=service]:checked").attr("id");
+        var str0   = service;
+        
+        $("#harga").html(str0);
+    });
+</script>
+
+<!-- Pembayaran -->
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Metode Pembayaran</h5>
+      
+        <div class="list-group">
+          <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="BCA 3560238443 - Muhamad Fikri Setiawan" id="bca">
+            <label for="bca" class="list-group-item">        
+            <center>
+              <img src="https://i.ibb.co/bdvVLnz/bca.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+          </div>
+          </div>
+        </div>
+      
+      <br>
+      
+        <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="BRI 369401038286539 - Muhamad Fikri Setiawan" id="bri">
+            <label for="bri" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/J37kV5m/bri.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+        </div>
+        </div>
+        </div>
+    
+      <br>
+        
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="Mandiri Virtual Account 89508082325161149 - Muhamad Fikri Setiawan" id="mandiri">
+            <label for="mandiri" class="list-group-item">  
+            <center>
+              <img src="https://i.ibb.co/DGgmW8b/mandiri.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+          </div>
+        </div>
+       </div>
+
+      <br>
+      
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="Dana 082325161149 - Muhamad Fikri Setiawan" id="dana">
+            <label for="dana" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/hCYpHy4/dana.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="Gopay 082325161149 - Muhamad Fikri Setiawan" id="gopay">
+            <label for="gopay" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/vHzShX9/gopay.jpg" alt="" height="46" width="135">
+            </center>
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="OVO 082325161149 - Muhamad Fikri Setiawan" id="ovo">
+            <label for="ovo" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/ZBsF5Sz/ovo.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="Shopeepay 082325161149 - Muhamad Fikri Setiawan" id="shopeepay">
+            <label for="shopeepay" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/CzD6SG7/shopeepay.jpg" alt="" height="46" width="135">
+            </center>
+          </label>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="LinkAja 082325161149 - Muhamad Fikri Setiawan" id="linkaja">
+            <label for="linkaja" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/0sJVFc2/link-aja.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="Alfamart - Dibuatkan Kode" id="alfamart">
+            <label for="alfamart" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/9YkGDdP/alfamart.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <br>
+      
+      <div class="list-group">
+        <div class="row">
+          <div class="col">
+            <input type="radio" name="payment" value="Indomaret - Dibuatkan Kode" id="indomaret">
+            <label for="indomaret" class="list-group-item">
+            <center>
+              <img src="https://i.ibb.co/Hz9vD7D/indomaret.jpg" alt="" height="46" width="135">
+            </center>
+            </label>
+          </div>
+        </div>
+       </div>       
+    </div>
+
+  </div>
+</div>
+
+<br>
+
+<!-- Button trigger modal-->
+
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <button type="button" class="btn btn-primary text-light" data-toggle="modal" data-target="#exampleModalCenter" id="submit">
+        Beli Sekarang!
+      </button>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title" style="color:white" id="exampleModalLongTitle">Detail Pemesanan</h5>
+      </div>
+      <div class="modal-body">
+       <div id="text-info"></div>
+       <div class="form-control">
+        <table class="table table-borderless">
+            <tr>
+                <td>ID</td>
+                <td width='3px'>: </td>
+                <td id="info1"></td>
+            </tr>
+            <tr>
+              <td>Nickname</td>
+              <td width='3px'>: </td>
+              <td id="info2"></td>
+          </tr>
+            <tr>
+                <td>Order</td>
+                <td width='3px'>: </td>
+                <td id="info3"></td>
+            </tr>
+            <tr>
+                <td>Pembayaran</td>
+                <td width='3px'>: </td>
+                <td id="info4"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td width='3px'>: </td>
+                <td id="info5"></td>
+            </tr>
+        </table>
+        <h7 class="text-justify"><i><b>Bagian pembayaran akan dialihkan melalui chat WhatsApp.</b></i></h7>
+        <h7 class="text-justify"><i><b>Lakukan pembayaran sesuai petunjuk, lalu kirim bukti pembayaran</b></i></h7>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Batalkan</button>
+        <button type="button" class="btn btn-primary text-light" id="konfirmasi">Konfirmasi</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+<!-- Javascript Modal-->
+<script type="text/javascript">
+  $("#submit").click(function () {
+      var id       = $("#id").val();
+      var nickname = $("#nickname").val();
+      var service  = $("input[name=service]:checked").val();
+      var payment  = $("input[name=payment]:checked").val();
+      var harga  = $("input[name=service]:checked").attr("id");
+      
+      
+      var str1   = id;
+      var str2   = nickname;
+      var str3   = service;
+      var str4   = payment;
+      var str5   = harga;
+      
+      $("#info1").html(str1);
+      $("#info2").html(str2);
+      $("#info3").html(str3);
+      $("#info4").html(str4);
+      $("#info5").html(str5);
+  });
+</script>
+
+<!-- ORDER TO WHATSAPP-->
+
+<script type="text/javascript">
+$(document).on('click','#konfirmasi', function(){
+    /* Inputan Formulir */
+    var input_id          = $("#id").val(),
+        input_nickname    = $("#nickname").val(),
+        input_service     = $("input[name=service]:checked").val(),
+        input_payment     = $("input[name=payment]:checked").val(),
+        input_harga       = $("input[name=service]:checked").attr("id");
+        
+    /* Pengaturan Whatsapp */
+    var walink      = 'https://web.whatsapp.com/send',
+        phone       = '6285702314494',
+        text        = '*Call Of Duty Mobile*',
+        text_yes    = 'Pesanan Anda berhasil terkirim.',
+        text_no     = 'Isilah formulir terlebih dahulu.';
+ 
+    /* Smartphone Support */
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var walink = 'whatsapp://send';
+      }
+ 
+    if(input_id != "" ){
+        /* Whatsapp URL */
+        var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
+            '*ID* : ' + input_id +  '%0A' +
+            '*Nickname* : ' + input_nickname + '%0A' + 
+            '*Order* : ' + input_service + '%0A' +
+            '*Pembayaran* : ' + input_payment + '%0A' +
+            '*TOTAL* : ' + input_harga + '%0A%0A' + 
+            'Kirim *Bukti Pembayaran* disini.';
+ 
+        /* Whatsapp Window Open */
+        window.open(checkout_whatsapp,'_blank');
+        document.getElementById("text-info").innerHTML = '<div class="alert alert-success">'+text_yes+'</div>';
+    } else {
+        document.getElementById("text-info").innerHTML = '<div class="alert alert-danger">'+text_no+'</div>';
+    }
+});
+</script>
+
+
+<!-- Footer 1 -->
+
+<footer class="footer mt-auto bg-primary">
+  <div class="container pt-md-3 pb-md-3 text-left text-md-left">
+   <div class="row" style="color: white;">
+    <div class="col-md-3 col-lg-3 col-sm-12 mt-md-0 mt-3 p-3 text-center footer-tutorial">
+ <h1><i class="fas fa-gamepad mb-2"></i></h1>
+ <img src="https://i.ibb.co/XsDxfph/game.png" alt="" width="100px">
+ <h5>Pilih Game</h5>
+ Tersedia beberapa game pilihan seperti Mobile Legends, Free Fire, PUBG Mobile dan lain-lain
+ </div>
+ <div class="col-md-3 col-lg-3 col-sm-12 mt-md-0 mt-3 p-3 text-center footer-tutorial">
+ <h1><i class="fas fa-hand-pointer mb-2"></i></h1>
+ <img src="https://i.ibb.co/PFwT3zK/cursor.png" alt="" width="100px">                
+ <h5>Pilih Nominal</h5>
+ Pilih nominal top up game yang kamu pilih
+ </div>
+ <div class="col-md-3 col-lg-3 col-sm-12 mt-md-0 mt-3 p-3 text-center footer-tutorial">
+ <h1><i class="fas fa-money-bill-wave mb-2"></i></h1>
+ <img src="https://i.ibb.co/RpfG1pB/pembayaran.png" alt="" width="100px">                
+ <h5>Lakukan Pembayaran</h5>
+ Tersedia berbagai metode pembayaran diantaranya Bank BCA, Bank BRI, Bank Mandiri, DANA, OVO, Gopay, Shopee Pay, Link Aja, Alfamart, Indomaret dll
+ </div>
+ <div class="col-md-3 col-lg-3 col-sm-12 mt-md-0 mt-3 p-3 text-center footer-tutorial">
+ <h1><i class="fas fa-gift mb-2"></i></h1>
+ <img src="https://i.ibb.co/89R2yMP/Diamond.png" alt="" width="100px">                
+ <h5>Topup Berhasil</h5>
+ Lakukan pembayaran serta kirimkan bukti pembayaran dan Top up akan segera diproses
+    </div>
+   </div>
+  </div>
+ </footer>
+ 
+ <!-- footer copyright -->
+ <div class="footer-copyright py-3">
+  <div class="container mt-2">
+   <div class="row">
+    <div class="col-lg-6 mb-3">
+      <h4 class="mt-2 mb-3">Fiks Game Store</h4>
+ Fiks Game Store Adalah Tempat Top Up Games Yang Aman, Murah, dan Terpercaya Sejak 2020. Fiks Game Store Menyediakan Layanan Top Up Game seperti Mobile Legends,  Free Fire, PUBG Mobile dan lain-lain. Untuk Mempermudah Pembayaran Anda, Disini Kami Juga Menyediakan Metode Pembayaran Bank BCA, Bank BRI, Bank Mandiri, DANA, OVO, Gopay, Shopee Pay, Link Aja, Alfamart, Indomaret dll.                    
+ <br>
+ <br>
+ Kalian Juga Bisa Melakukan Top Up Dengan Datang Ke Toko Kami Yang Beralamat Di Jalan Jembatan Baru Kesesi, Dusun Kesesi Kota, Kec. Kesesi, Kab. Pekalongan (Fotocopy Kurnia)
+ <br>
+ <br>
+ <h4 class="mt-2 mb-3">Hubungi Kami</h4>
+ <img src="https://i.ibb.co/M6RB0sb/Whatsapp-color.png" alt="" width="20px">  <a href="https://wa.me/6285702314494" style="color:black">Whatsapp</a> 
+ <br>
+ <br>
+ <img src="https://i.ibb.co/nm70qBh/Instagram-color.png" alt="" width="20px">  <a href="https://www.instagram.com/fiks_gamestore" style="color:black">Instagram</a> 
+ <br>
+ <br>
+ <img src="https://i.ibb.co/BtJK98K/Gmail-color.png" alt="" width="20px">  <a href="mailto:fiksgamestore@gmail.com" style="color:black">Email</a> 
+ <br>
+   </div>
+    <div class="col-lg-6 pl-3 pr-3" style="background-color: #fff;">
+     <h4 class="mt-2 mb-2">Berbagai Metode Pembayaran</h4>
+     <hr>
+     <div class="container">    
+       <img src="https://ramzdstore.com/assets/images/accept.png" alt="" width="300px">
+     </div>
+     </div>
+         <div class="col-lg-12 text-center text-md-left">
+             <hr>
+             <center>
+              <div class="">
+                  © 2020<a href="#" class="text-dark"> Fiks Game Store</a> | <a href="#" class="text-dark">Syarat dan Ketentuan</a>
+              </div>
+            </center>
+         </div>
+     </div>
+   </div>
+ </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
